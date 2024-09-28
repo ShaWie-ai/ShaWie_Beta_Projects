@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, 'Arial';
+    color: #fff;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(Background.jpg);
+    background-repeat: no-repeat;
+}
+
+.container {
+    position: relative;
+    width: 455px;
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+}
+
+.topContainer {
+    position: relative;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.topContainer input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 0 48px 0 40px;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.topContainer input:focus::placeholder {
+    color: transparent;
+}
+
+.topContainer input::placeholder {
+    color: #ffffffc9 ;
+    text-transform: capitalize;
+}
+
+.topContainer button {
+    position: absolute;
+    right: 0;
+    background: none;
+    border: none;
+    background-color: transparent;
+    height: 90%;
+    width: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.topContainer button:hover {
+    background-color: hsla(0, 0%, 90%, 0.062);
+}
+
+.topContainer button:active {
+    background-color: hsla(0, 0%, 90%, 0.116);
+}
+
+#locationLogo {
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.imgContainer {
+    text-align: center;
+    margin: .5em 0 1em 0;
+    display: none;
+    justify-content: center;
+}
+
+.imgContainer img {
+    width: 200px;
+    height: 200px;
+}
+
+.tempContainer {
+    text-align: center;
+    line-height: 1.1;
+    padding-bottom: 1em;
+    display: none;
+}
+
+.tempContainer h2{
+    font-size: 3.5em;
+}
+
+.lastContainer {
+    margin-top: 3em;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Humidity, .Windspeed {
+    display: flex;
+    align-items: center;
+}
+
+.HumidityText{
+    line-height: 1.2;
+}
+
+
+.WindSpeedText{
+    line-height: 1.2;
+}
+
+
+
+
